@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update
+
+media_folder: "_src/images/uploads" # Lokasi untuk menyimpan gambar yang diunggah
+public_folder: "/images/uploads" # Path untuk menampilkan gambar di website
+
+collections:
+  - name: "posts" # Harus sama dengan nama koleksi di Eleventy
+    label: "Artikel & Materi" # Nama yang muncul di CMS
+    folder: "_src/posts" # Folder tempat menyimpan file
+    create: true # Izinkan membuat file baru
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Format nama file otomatis
+    fields: # Daftar field di dalam form
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.njk" }
+      - { label: "Judul Artikel", name: "title", widget: "string" }
+      - { label: "Tanggal Publikasi", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["posts"] }
+      - { label: "Gambar Utama", name: "image", widget: "image" }
+      - { label: "Deskripsi Gambar", name: "image_alt", widget: "string" }
+      - { label: "Ringkasan (Excerpt)", name: "excerpt", widget: "text" }
+      - { label: "ID Video YouTube (Opsional)", name: "youtube_id", widget: "string", required: false }
+      - { label: "Intisari (Opsional)", name: "key_points", widget: "list", required: false }
+      - { label: "Isi Konten", name: "body", widget: "markdown" }
