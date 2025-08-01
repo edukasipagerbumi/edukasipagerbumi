@@ -1,0 +1,50 @@
+---
+layout: base.njk
+title: Edukasi Warga
+---
+
+<section class="page-header">
+    <div class="container">
+        <h1>Edukasi untuk Warga</h1>
+        <p>Temukan panduan praktis untuk meningkatkan keterampilan dan potensi desa.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title-left"><i class="fas fa-lightbulb"></i>Kategori Pengetahuan</h2>
+        <div class="subject-grid">
+            
+            {# Loop ini akan membuat kartu secara otomatis dari _data/subjects.js #}
+            {%- for kategori in subjects.edukasiWarga -%}
+            <a href="{{ kategori.url }}" class="subject-card">
+                <i class="{{ kategori.icon }}"></i>
+                <span>{{ kategori.name }}</span>
+            </a>
+            {%- endfor -%}
+
+        </div>
+    </div>
+</section>
+
+<section class="section section-alternate">
+    <div class="container">
+        <h2 class="section-title-left"><i class="fas fa-newspaper"></i>Panduan Terbaru</h2>
+        <div class="articles-grid">
+            
+            {# Loop ini menampilkan semua artikel dengan tag "Edukasi Warga" #}
+            {%- for post in collections.EdukasiWarga | reverse -%}
+            <article class="article-card">
+                <img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}">
+                <div class="article-card-content">
+                    <span class="tag">Edukasi Warga</span>
+                    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                    <p>{{ post.data.excerpt }}</p>
+                    <a href="{{ post.url }}" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+            {%- endfor -%}
+
+        </div>
+    </div>
+</section>

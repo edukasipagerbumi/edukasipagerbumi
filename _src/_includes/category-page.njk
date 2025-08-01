@@ -1,0 +1,32 @@
+---
+layout: base.njk
+---
+<section class="page-header">
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <p>Kumpulan artikel dan materi untuk kategori {{ title }}.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="articles-grid">
+
+            {# Loop ini akan menampilkan artikel dari koleksi yang ditentukan di front matter #}
+            {%- for post in collections[collectionKey] | reverse -%}
+            <article class="article-card">
+                <img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}">
+                <div class="article-card-content">
+                    <span class="tag">{{ title }}</span>
+                    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                    <p>{{ post.data.excerpt }}</p>
+                    <a href="{{ post.url }}" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+            {%- else -%}
+            <p>Belum ada materi untuk kategori ini.</p>
+            {%- endfor -%}
+
+        </div>
+    </div>
+</section>

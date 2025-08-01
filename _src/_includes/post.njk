@@ -1,0 +1,52 @@
+---
+layout: base.njk
+---
+<div class="article-container">
+    <div class="article-layout">
+        <main class="article-main-content">
+            <article>
+                <header class="article-header">
+                    <div class="article-meta">
+                        {% if tags.length > 1 %}
+                            <span class="tag">{{ tags | last }}</span>
+                        {% endif %}
+                        <span class="date">{{ date | readableDate }}</span>
+                    </div>
+                    <h1>{{ title }}</h1>
+                    {% if excerpt %}
+                        <p class="excerpt">{{ excerpt }}</p>
+                    {% endif %}
+                </header>
+
+                {% if image %}
+                    <img src="{{ image }}" alt="{{ image_alt }}" class="feature-image">
+                {% endif %}
+
+                {# VIDEO DIPINDAHKAN KE SINI #}
+                {% if youtube_id %}
+                <div class="video-container-main">
+                    <iframe src="https://www.youtube.com/embed/{{ youtube_id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                {% endif %}
+
+                <div class="article-body">
+                    {{ content | safe }}
+                </div>
+            </article>
+        </main>
+
+        <aside class="article-sidebar">
+            {# Sidebar sekarang hanya berisi intisari #}
+            {% if key_points %}
+            <div class="sidebar-widget">
+                <h4>Intisari</h4>
+                <ul class="key-points-list">
+                    {% for point in key_points %}
+                        <li>{{ point }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </aside>
+    </div>
+</div>

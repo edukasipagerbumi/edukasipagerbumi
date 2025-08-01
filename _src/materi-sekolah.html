@@ -1,0 +1,75 @@
+---
+layout: base.njk
+title: Materi Sekolah
+---
+
+<section class="page-header">
+    <div class="container">
+        <h1>Materi Pelajaran Sekolah</h1>
+        <p>Pilih jenjang pendidikanmu untuk menemukan materi yang kamu butuhkan.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title-left"><i class="fas fa-user-graduate"></i>Sekolah Menengah Atas (SMA)</h2>
+        <div class="subject-grid">
+            {%- for mapel in subjects.sma -%}
+            <a href="{{ mapel.url }}" class="subject-card">
+                <i class="{{ mapel.icon }}"></i>
+                <span>{{ mapel.name }}</span>
+            </a>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
+
+<section class="section section-alternate">
+    <div class="container">
+        <h2 class="section-title-left"><i class="fas fa-user-friends"></i>Sekolah Menengah Pertama (SMP)</h2>
+        <div class="subject-grid">
+            {%- for mapel in subjects.smp -%}
+            <a href="{{ mapel.url }}" class="subject-card">
+                <i class="{{ mapel.icon }}"></i>
+                <span>{{ mapel.name }}</span>
+            </a>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title-left"><i class="fas fa-child"></i>Sekolah Dasar (SD)</h2>
+        <div class="subject-grid">
+            {%- for mapel in subjects.sd -%}
+            <a href="{{ mapel.url }}" class="subject-card">
+                <i class="{{ mapel.icon }}"></i>
+                <span>{{ mapel.name }}</span>
+            </a>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title-left"><i class="fas fa-newspaper"></i>Materi Terbaru</h2>
+        <div class="articles-grid">
+
+            {# Loop ini hanya akan menampilkan artikel dengan tag "Materi Sekolah" #}
+            {%- for post in collections.MateriSekolah | reverse -%}
+            <article class="article-card">
+                <img src="{{ post.data.image }}" alt="{{ post.data.image_alt }}">
+                <div class="article-card-content">
+                    <span class="tag">Materi Sekolah</span>
+                    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                    <p>{{ post.data.excerpt }}</p>
+                    <a href="{{ post.url }}" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article>
+            {%- endfor -%}
+
+        </div>
+    </div>
+</section>
