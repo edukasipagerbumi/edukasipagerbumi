@@ -10,6 +10,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("_src/images");
+  
+  // PERBAIKAN: Tambahkan baris ini untuk menyalin folder admin
+  eleventyConfig.addPassthroughCopy("_src/admin");
 
   return {
     // Menentukan folder-folder
