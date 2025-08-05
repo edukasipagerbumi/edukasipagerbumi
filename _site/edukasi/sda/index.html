@@ -40,7 +40,23 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/pilahsampah1.jpeg" alt="Tangan seseorang yang sedang memilah sampah ke dalam wadah yang berbeda">
+                <div class="article-card-content">
+                    <span class="tag">Pengelolaan SDA</span>
+                    <h3><a href="/posts/2025-08-05-pilah-sampah/">Panduan Praktis Memilah Sampah dari Rumah untuk Pemula</a></h3>
+                    <p>Pelajari cara mudah dan efektif untuk mulai memilah sampah dari rumah. Kenali empat kategori utama sampah—organik, anorganik, B3, dan residu—serta cara mengelolanya untuk mengurangi dampak lingkungan dan membuka potensi ekonomi.</p>
+                    <a href="/posts/2025-08-05-pilah-sampah/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
+                <img src="/images/rainwater1.png" alt="Sistem pemanenan air hujan yang terpasang di sebuah rumah dengan tangki besar">
+                <div class="article-card-content">
+                    <span class="tag">Pengelolaan SDA</span>
+                    <h3><a href="/posts/2025-08-05-panen-air-hujan/">Panduan Lengkap Sistem Pemanen Air Hujan (Rainwater Harvesting)</a></h3>
+                    <p>Pelajari cara membangun sistem pemanenan air hujan (rainwater harvesting) yang efektif di rumah. Pahami setiap komponennya, dari talang air, saringan, hingga tangki penyimpanan, untuk mendapatkan &quot;emas biru&quot; yang berkualitas.</p>
+                    <a href="/posts/2025-08-05-panen-air-hujan/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +91,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

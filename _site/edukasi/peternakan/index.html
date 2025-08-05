@@ -40,7 +40,23 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/budikdamber1.jpeg" alt="Sebuah ember besar yang di atasnya tumbuh tanaman kangkung dan di dalamnya ada ikan lele">
+                <div class="article-card-content">
+                    <span class="tag">Peternakan dan Perikanan</span>
+                    <h3><a href="/posts/2025-08-05-budikdamber-lele/">Panduan Lengkap Budikdamber, Solusi Bertani dan Beternak di Lahan Sempit</a></h3>
+                    <p>Pelajari teknik Budikdamber (Budidaya Ikan dalam Ember), sebuah sistem akuaponik sederhana yang memungkinkan Anda memanen ikan dan sayuran sekaligus dari satu wadah. Cocok untuk pemula dengan modal terjangkau.</p>
+                    <a href="/posts/2025-08-05-budikdamber-lele/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
+                <img src="/images/maggot1.jpeg" alt="Tumpukan maggot BSF yang sedang mengurai sampah organik">
+                <div class="article-card-content">
+                    <span class="tag">Peternakan dan Perikanan</span>
+                    <h3><a href="/posts/2025-08-05-budidaya-maggot/">Membedah Budidaya Maggot BSF, Solusi Limbah Organik dan Pakan Ternak</a></h3>
+                    <p>Selami dunia budidaya maggot Black Soldier Fly (BSF) bersama Joglo Farm Yogyakarta. Pelajari bagaimana limbah organik diubah menjadi pakan ternak bernutrisi tinggi dan pupuk organik yang ramah lingkungan.</p>
+                    <a href="/posts/2025-08-05-budidaya-maggot/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +91,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

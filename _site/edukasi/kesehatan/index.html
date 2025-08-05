@@ -40,7 +40,23 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/herbal1.png" alt="Segelas ramuan herbal hangat dengan jahe, temulawak, kencur, dan jeruk nipis di sekelilingnya">
+                <div class="article-card-content">
+                    <span class="tag">Kesehatan dan Gizi</span>
+                    <h3><a href="/posts/2025-08-05-ramuan-herbal/">Resep Ramuan Herbal Alami untuk Meredakan Batuk dan Flu</a></h3>
+                    <p>Pelajari cara membuat ramuan herbal yang ampuh untuk meredakan gejala batuk dan flu menggunakan bahan-bahan alami dari dapur Anda. Pahami manfaat setiap rempah untuk kesehatan pernapasan.</p>
+                    <a href="/posts/2025-08-05-ramuan-herbal/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
+                <img src="/images/nasgormentega1.jpeg" alt="Sepiring nasi goreng mentega yang hangat dengan taburan daun bawang">
+                <div class="article-card-content">
+                    <span class="tag">Kesehatan dan Gizi</span>
+                    <h3><a href="/posts/2025-08-05-mpasi-1tahun/">Resep MPASI Booster BB: Nasi Goreng Mentega untuk Anak 1 Tahun ke Atas</a></h3>
+                    <p>Cari ide MPASI untuk menaikkan berat badan anak? Coba resep nasi goreng mentega yang lezat, gurih, dan kaya kalori ini. Dijamin si kecil suka dan lahap makannya!</p>
+                    <a href="/posts/2025-08-05-mpasi-1tahun/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +91,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

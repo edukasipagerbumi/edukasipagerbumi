@@ -40,7 +40,23 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/phishing1.png" alt="Ilustrasi sebuah kail pancing yang mencoba mengambil data dari laptop">
+                <div class="article-card-content">
+                    <span class="tag">Literasi Digital</span>
+                    <h3><a href="/posts/2025-08-05-link-phishing/">Waspada Jebakan Digital: Panduan Lengkap Mengenali Tautan Phishing</a></h3>
+                    <p>Pelajari cara membedakan tautan aman dan tautan phishing yang berbahaya. Pahami ciri-ciri pengirim yang mencurigakan dan cara memeriksa keaslian domain sebuah situs web untuk melindungi data pribadi Anda.</p>
+                    <a href="/posts/2025-08-05-link-phishing/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
+                <img src="/images/digitalmarketing1.png" alt="Ilustrasi sebuah funnel pemasaran digital dari awareness hingga advocacy">
+                <div class="article-card-content">
+                    <span class="tag">Literasi Digital</span>
+                    <h3><a href="/posts/2025-08-05-digital-marketing/">Membedah Fundamental Digital Marketing, Lebih dari Sekadar Jualan Online</a></h3>
+                    <p>Pahami esensi sejati dari digital marketing. Ini bukan hanya tentang iklan, tetapi tentang membangun kesadaran merek, memahami audiens, dan menciptakan pelanggan setia melalui perjalanan yang terstruktur.</p>
+                    <a href="/posts/2025-08-05-digital-marketing/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +91,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

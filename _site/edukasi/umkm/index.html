@@ -41,6 +41,22 @@
         <div class="articles-grid">
 
             <article class="article-card">
+                <img src="/images/umkm1.png" alt="Ilustrasi seorang pemilik usaha kecil yang sedang memikirkan strategi bisnisnya">
+                <div class="article-card-content">
+                    <span class="tag">UMKM &amp; Pemasaran</span>
+                    <h3><a href="/posts/2025-08-05-umkm-gagal/">Membedah 3 Penyebab Utama Kegagalan UMKM dan Cara Mengatasinya</a></h3>
+                    <p>Pahami mengapa mayoritas UMKM di Indonesia gagal bertahan. Artikel ini mengupas tuntas tiga penyebab utamanya—kurangnya digitalisasi, persaingan, dan kesulitan adaptasi—serta memberikan solusi praktis untuk mengatasinya.</p>
+                    <a href="/posts/2025-08-05-umkm-gagal/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
+                <img src="/images/marketplace1.png" alt="Tampilan antarmuka Marketplace Facebook di sebuah ponsel pintar">
+                <div class="article-card-content">
+                    <span class="tag">UMKM &amp; Pemasaran</span>
+                    <h3><a href="/posts/2025-08-05-facebook-marketplace/">Rahasia Sukses Jualan di Marketplace Facebook Tanpa Iklan</a></h3>
+                    <p>Pelajari strategi jitu untuk meningkatkan penjualan di Marketplace Facebook secara organik tanpa perlu mengeluarkan biaya iklan. Temukan cara riset produk yang dicari dan optimalkan postingan Anda agar &quot;gacor&quot;.</p>
+                    <a href="/posts/2025-08-05-facebook-marketplace/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
                 <img src="/images/umkm.jpg" alt="Seseorang memotret produk dengan HP">
                 <div class="article-card-content">
                     <span class="tag">UMKM &amp; Pemasaran</span>
@@ -83,6 +99,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

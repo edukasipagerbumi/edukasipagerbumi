@@ -40,7 +40,15 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/kimia1.jpeg" alt="Ilustrasi berbagai peralatan laboratorium kimia seperti tabung reaksi dan gelas ukur">
+                <div class="article-card-content">
+                    <span class="tag">Kimia</span>
+                    <h3><a href="/posts/2025-08-05-apa-itu-kimia/">Membedah Ilmu Kimia, &quot;Biro Jodoh&quot; di Alam Semesta</a></h3>
+                    <p>Selami dunia kimia yang diibaratkan sebagai &quot;biro jodoh&quot; bagi unsur-unsur alam. Pahami bagaimana cabang-cabang kimia, dari analitik hingga biokimia, membentuk dunia di sekitar kita dan membuka jalan bagi inovasi masa depan.</p>
+                    <a href="/posts/2025-08-05-apa-itu-kimia/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +83,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Konfirmasi Akun - EdukasiPagerbumi</title>
+    <script src="https://unpkg.com/netlify-identity-widget@1"></script>
+</head>
+<body>
+    <h1>Memproses undangan Anda...</h1>
+    <p>Jika tidak ada yang muncul, silakan refresh halaman ini atau coba salin-tempel link dari email secara manual.</p>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+</html>

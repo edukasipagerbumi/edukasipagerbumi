@@ -40,7 +40,15 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/sejarah1.jpeg" alt="Tumpukan buku-buku sejarah kuno dan sebuah jam saku">
+                <div class="article-card-content">
+                    <span class="tag">Sejarah</span>
+                    <h3><a href="/posts/2025-08-05-apa-itu-sejarah/">Membedah Ilmu Sejarah, Kamera Perekam Perjalanan Manusia</a></h3>
+                    <p>Pahami mengapa sejarah lebih dari sekadar hafalan tanggal dan nama. Ia adalah kamera yang merekam memori kolektif kita, sebuah lensa untuk memahami masa kini, dan kompas untuk menavigasi masa depan.</p>
+                    <a href="/posts/2025-08-05-apa-itu-sejarah/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +83,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

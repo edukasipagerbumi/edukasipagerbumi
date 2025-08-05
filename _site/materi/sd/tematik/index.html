@@ -40,7 +40,31 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/tatasurya1.jpeg" alt="Ilustrasi planet-planet dalam sistem tata surya yang mengorbit matahari">
+                <div class="article-card-content">
+                    <span class="tag">Tematik</span>
+                    <h3><a href="/posts/2025-08-04-tata-surya/">Rangkuman Detail Sistem Tata Surya dan Anggotanya</a></h3>
+                    <p>Jelajahi sistem tata surya kita secara mendalam, dari matahari sebagai pusatnya, klasifikasi planet dalam dan luar, hingga fenomena rotasi dan revolusi bumi yang memengaruhi kehidupan.</p>
+                    <a href="/posts/2025-08-04-tata-surya/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
+                <img src="/images/keragamansosialbudaya1.jpeg" alt="Ilustrasi detail keragaman budaya Indonesia dari berbagai daerah">
+                <div class="article-card-content">
+                    <span class="tag">Tematik</span>
+                    <h3><a href="/posts/2025-08-04-keragaman-soial-budaya/">Rangkuman Mendalam Keragaman Sosial dan Budaya Indonesia</a></h3>
+                    <p>Sebuah eksplorasi mendalam tentang kekayaan sosial dan budaya Indonesia, meliputi warisan sejarah, pluralitas agama, ribuan suku bangsa, adat istiadat unik, serta pengaruh lingkungan terhadap kehidupan masyarakat.</p>
+                    <a href="/posts/2025-08-04-keragaman-soial-budaya/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
+                <img src="/images/gagasanpokok1.jpeg" alt="Ilustrasi sebuah paragraf dengan kalimat utama yang ditandai">
+                <div class="article-card-content">
+                    <span class="tag">Tematik</span>
+                    <h3><a href="/posts/2025-08-04-gagasan-pokok-dan-pendukung/">Rangkuman Konsep Gagasan Pokok dan Gagasan Pendukung</a></h3>
+                    <p>Pahami perbedaan mendasar antara gagasan pokok dan gagasan pendukung, serta pelajari cara mengidentifikasi keduanya dalam berbagai jenis paragraf untuk pemahaman teks yang lebih baik.</p>
+                    <a href="/posts/2025-08-04-gagasan-pokok-dan-pendukung/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +99,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

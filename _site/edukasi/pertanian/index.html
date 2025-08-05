@@ -40,7 +40,23 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/kompos1.jpeg" alt="Tumpukan kompos yang subur dan berwarna gelap di atas tanah">
+                <div class="article-card-content">
+                    <span class="tag">Pertanian &amp; Perkebunan</span>
+                    <h3><a href="/posts/2025-08-05-membuat-kompos/">Panduan Lengkap Membuat Kompos Rumahan Anti Bau</a></h3>
+                    <p>Pelajari cara mudah mengolah sampah organik rumah tangga menjadi kompos yang subur tanpa menimbulkan bau tak sedap. Pahami rahasia di balik proses pengomposan aerobik yang efektif dan ramah lingkungan.</p>
+                    <a href="/posts/2025-08-05-membuat-kompos/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article><article class="article-card">
+                <img src="/images/pare1.jpeg" alt="Hamparan kebun pare yang subur dengan buah yang lebat dan berwarna hijau">
+                <div class="article-card-content">
+                    <span class="tag">Pertanian &amp; Perkebunan</span>
+                    <h3><a href="/posts/2025-08-05-budidaya-pare/">Panduan Sukses Budidaya Pare Tumpang Sari untuk Hasil Melimpah</a></h3>
+                    <p>Pelajari strategi budidaya pare tumpang sari yang cerdas dari petani berpengalaman. Temukan rahasia pemilihan varietas unggul, teknik perawatan, dan pemupukan untuk hasil panen berkualitas tinggi yang diminati pasar.</p>
+                    <a href="/posts/2025-08-05-budidaya-pare/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +91,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

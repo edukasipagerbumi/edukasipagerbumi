@@ -1,6 +1,6 @@
 module.exports = {
   sma: [
-    { name: "Matematika", url: "/materi/sma/matematika/", icon: "fas fa-calculator", tag: "matematika-sma" },
+    { name: "Matematika", url: "/materi/sma/matematika-sma/", icon: "fas fa-calculator", tag: "matematika-sma" },
     { name: "Fisika", url: "/materi/sma/fisika/", icon: "fas fa-atom", tag: "fisika" },
     { name: "Kimia", url: "/materi/sma/kimia/", icon: "fas fa-flask", tag: "kimia" },
     { name: "Biologi", url: "/materi/sma/biologi/", icon: "fas fa-dna", tag: "biologi" },
@@ -13,13 +13,13 @@ module.exports = {
   smp: [
     { name: "B. Indonesia", url: "/materi/smp/indonesia/", icon: "fas fa-language", tag: "bahasa-indonesia" },
     { name: "B. Inggris", url: "/materi/smp/inggris/", icon: "fas fa-book", tag: "bahasa-inggris" },
-    { name: "Matematika", url: "/materi/smp/matematika/", icon: "fas fa-square-root-alt", tag: "matematika-smp" },
+    { name: "Matematika", url: "/materi/smp/matematika-smp/", icon: "fas fa-square-root-alt", tag: "matematika-smp" },
     { name: "IPA Terpadu", url: "/materi/smp/ipa/", icon: "fas fa-leaf", tag: "ipa" },
     { name: "IPS Terpadu", url: "/materi/smp/ips/", icon: "fas fa-users", tag: "ips" }
   ],
   sd: [
     { name: "Tematik", url: "/materi/sd/tematik/", icon: "fas fa-pencil-alt", tag: "tematik" },
-    { name: "Matematika", url: "/materi/sd/matematika/", icon: "fas fa-divide", tag: "matematika-sd" }
+    { name: "Matematika", url: "/materi/sd/matematika-sd/", icon: "fas fa-divide", tag: "matematika-sd" }
   ],
   edukasiWarga: [
     { name: "Pertanian & Perkebunan", url: "/edukasi/pertanian/", icon: "fas fa-tractor", tag: "pertanian" },

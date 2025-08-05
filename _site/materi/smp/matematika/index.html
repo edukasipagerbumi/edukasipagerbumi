@@ -40,7 +40,15 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/satuanbaku1.jpeg" alt="Ilustrasi berbagai alat ukur seperti timbangan, penggaris, dan jam">
+                <div class="article-card-content">
+                    <span class="tag">Matematika</span>
+                    <h3><a href="/posts/2025-08-04-satuan-panjang-baku/">Rangkuman Konsep Satuan Baku: Panjang, Berat, dan Waktu</a></h3>
+                    <p>Pelajari konsep dasar satuan baku untuk berat (kilogram, gram), panjang (meter, sentimeter), dan waktu (jam, menit, detik), lengkap dengan cara konversi dan contoh aplikasinya dalam kehidupan sehari-hari.</p>
+                    <a href="/posts/2025-08-04-satuan-panjang-baku/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +83,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

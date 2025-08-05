@@ -40,7 +40,15 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/penjajahan1.jpeg" alt="Ilustrasi kapal-kapal Eropa yang berlabuh di pelabuhan Indonesia pada abad ke-16">
+                <div class="article-card-content">
+                    <span class="tag">IPS Terpadu</span>
+                    <h3><a href="/posts/2025-08-04-masa-penjajahan/">Rangkuman Sejarah Penjajahan dan Perjuangan Kemerdekaan Indonesia</a></h3>
+                    <p>Telusuri jejak sejarah panjang bangsa Indonesia, mulai dari kedatangan bangsa Eropa yang dimotivasi oleh rempah-rempah dan semboyan 3G, hingga lahirnya semangat kebangsaan yang mengantarkan pada proklamasi kemerdekaan.</p>
+                    <a href="/posts/2025-08-04-masa-penjajahan/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +83,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

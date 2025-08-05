@@ -40,7 +40,7 @@
 <section class="section">
     <div class="container">
         <h2 class="section-title-left"><i class="fas fa-user-graduate"></i>Sekolah Menengah Atas (SMA)</h2>
-        <div class="subject-grid"><a href="/materi/sma/matematika/" class="subject-card">
+        <div class="subject-grid"><a href="/materi/sma/matematika-sma/" class="subject-card">
                 <i class="fas fa-calculator"></i>
                 <span>Matematika</span>
             </a><a href="/materi/sma/fisika/" class="subject-card">
@@ -80,7 +80,7 @@
             </a><a href="/materi/smp/inggris/" class="subject-card">
                 <i class="fas fa-book"></i>
                 <span>B. Inggris</span>
-            </a><a href="/materi/smp/matematika/" class="subject-card">
+            </a><a href="/materi/smp/matematika-smp/" class="subject-card">
                 <i class="fas fa-square-root-alt"></i>
                 <span>Matematika</span>
             </a><a href="/materi/smp/ipa/" class="subject-card">
@@ -99,7 +99,7 @@
         <div class="subject-grid"><a href="/materi/sd/tematik/" class="subject-card">
                 <i class="fas fa-pencil-alt"></i>
                 <span>Tematik</span>
-            </a><a href="/materi/sd/matematika/" class="subject-card">
+            </a><a href="/materi/sd/matematika-sd/" class="subject-card">
                 <i class="fas fa-divide"></i>
                 <span>Matematika</span>
             </a></div>
@@ -146,6 +146,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

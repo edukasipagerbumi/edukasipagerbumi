@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "_src/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Artikel & Materi"
+    folder: "_src/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post.njk" }
+      - { label: "Judul Artikel", name: "title", widget: "string" }
+      - { label: "Tanggal Publikasi", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["posts"] }
+      - { label: "Gambar Utama", name: "image", widget: "image" }
+      - { label: "Deskripsi Gambar", name: "image_alt", widget: "string" }
+      - { label: "Ringkasan (Excerpt)", name: "excerpt", widget: "text" }
+      - { label: "ID Video YouTube (Opsional)", name: "youtube_id", widget: "string", required: false }
+      - { label: "Intisari (Opsional)", name: "key_points", widget: "list", required: false }
+      - { label: "Isi Konten", name: "body", widget: "markdown" }

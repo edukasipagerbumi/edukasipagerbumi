@@ -1,5 +1,5 @@
 ---
 layout: category-page.njk
-title: Sejarah
-collectionKey: sejarah
+title: Soiologi
+collectionKey: sosiologi
 ---

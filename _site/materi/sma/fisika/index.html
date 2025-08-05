@@ -40,7 +40,15 @@
     <div class="container">
         <div class="articles-grid">
 
-            <p>Belum ada materi untuk kategori ini.</p></div>
+            <article class="article-card">
+                <img src="/images/fisika1.jpeg" alt="Ilustrasi alam semesta dengan planet, galaksi, dan hukum fisika">
+                <div class="article-card-content">
+                    <span class="tag">Fisika</span>
+                    <h3><a href="/posts/2025-08-05-apa-itu-fisika/">Membedah Ilmu Fisika, Petualangan Sang Detektif Semesta</a></h3>
+                    <p>Jelajahi dunia fisika yang diibaratkan sebagai seorang detektif yang mengungkap misteri alam semesta, mulai dari fisika klasik Newton, relativitas Einstein, hingga fisika kuantum yang penuh keajaiban.</p>
+                    <a href="/posts/2025-08-05-apa-itu-fisika/" class="read-more">Baca Selengkapnya &rarr;</a>
+                </div>
+            </article></div>
     </div>
 </section>
     </main>
@@ -75,6 +83,19 @@
         </div>
     </footer>
     
-    <script src="/js/script.js"></script>
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
