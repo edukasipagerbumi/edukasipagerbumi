@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peta Potensi Desa - EdukasiPagerbumi</title>
+
+    <meta name="description" content="Pusat Edukasi untuk Pelajar dan Warga Desa Pagerbumi. Sebuah persembahan dari Mahasiswa KKN.">
+    <meta name="google-site-verification" content="_HLA068h-wj1Wm2gSiHYz6linj5U_l0qyvUzwicPGPU" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="/">EdukasiPagerbumi</a>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Beranda</a>
+                <a href="/materi-sekolah/">Materi Sekolah</a>
+                <a href="/edukasi-warga/">Edukasi Warga</a>
+                <a href="/info-terkini/">Info Terkini</a>
+                <a href="/peta-potensi/">Peta Desa</a>
+            </nav>
+            <div class="header-cta">
+                <a href="/kontak" class="btn">Kontak</a>
+                <button class="mobile-menu-button"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+<section class="page-header">
+    <div class="container">
+        <h1>Galeri Peta Desa Pagerbumi</h1>
+        <p>Informasi visual mengenai kondisi geografis, potensi sumber daya, dan warisan budaya desa.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="map-entry">
+            <div class="map-image">
+                <img src="/images/peta/petatutupanlahan.png" alt="Peta Tutupan Lahan Desa Pagerbumi">
+            </div>
+            <div class="map-description">
+                <h3>Peta Tutupan Lahan</h3>
+                <p>Peta ini menggambarkan pemanfaatan lahan di Desa Pagerbumi, mencakup area persawahan, ladang, pemukiman warga, serta batas-batas administratif antar dusun. Informasi ini penting untuk perencanaan tata ruang dan pengembangan wilayah desa.</p>
+            </div>
+        </div>
+
+        <div class="map-entry">
+            <div class="map-image">
+                <img src="/images/peta/petafauna.png" alt="Peta Persebaran Fauna Desa Pagerbumi">
+            </div>
+            <div class="map-description">
+                <h3>Peta Persebaran Fauna</h3>
+                <p>Menunjukkan keanekaragaman hayati yang ada di Desa Pagerbumi. Peta ini mendokumentasikan lokasi penemuan berbagai jenis fauna, memberikan gambaran tentang kekayaan ekosistem lokal yang perlu dijaga kelestariannya.</p>
+            </div>
+        </div>
+
+        <div class="map-entry">
+            <div class="map-image">
+                <img src="/images/peta/petaheritage.png" alt="Peta Persebaran Lokasi Cagar Budaya Kabupaten Pangandaran">
+            </div>
+            <div class="map-description">
+                <h3>Peta Lokasi Cagar Budaya</h3>
+                <p>Peta ini menampilkan lokasi situs-situs warisan budaya yang berada di sekitar wilayah Desa Pagerbumi dalam konteks Kabupaten Pangandaran. Ini menunjukkan kekayaan sejarah dan budaya yang ada di daerah ini.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>EdukasiPagerbumi</h4>
+                    <p>Sebuah platform digital yang dibangun dan dipersembahkan oleh Tim KKN Mahasiswa untuk masyarakat Desa Pagerbumi, Kec. Cigugur, Kab. Pangandaran.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigasi</h4>
+                    <ul class="footer-links">
+                        <li><a href="/materi-sekolah">Materi Sekolah</a></li>
+                        <li><a href="/edukasi-warga">Edukasi Warga</a></li>
+                        <li><a href="/info-terkini">Info Terkini</a></li>
+                        <li><a href="/tentang">Tentang Proyek</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Hubungi Kami</h4>
+                    <ul class="footer-links">
+                        <li>Email: <a href="mailto:edukasipagerbumi@gmail.com">edukasipagerbumi@gmail.com</a></li>
+                        <li>Desa Pagerbumi, Cigugur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EdukasiPagerbumi. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    
+<script src="/js/script.js"></script>
+
+<script src="https://unpkg.com/netlify-identity-widget@1"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
