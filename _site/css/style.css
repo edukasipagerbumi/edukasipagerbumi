@@ -801,9 +801,13 @@ body {
 
 .map-image img {
     width: 100%;
+    max-width: 800px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow);  
     border: 1px solid var(--border-color);
+    display: block;
+    margin: 0 auto;
 }
 
 .map-description h3 {
