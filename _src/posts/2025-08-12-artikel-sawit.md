@@ -3,7 +3,7 @@ layout: post.njk
 title: "Menanam Harapan: Perjalanan Sawit di Desa Pagerbumi"
 author: Alfin Ramadhan
 date: 2025-08-12
-tags: ["posts", "Inspirasi Desa", "pertanian", "ekonomi", "sawit"]
+tags: ["posts", "Edukasi Warga", "pertanian"]
 image: /images/sawit-pagerbumi1.jpeg
 image_alt: Hamparan kebun kelapa sawit yang subur di Desa Pagerbumi dengan latar perbukitan.
 excerpt: Ikuti kisah inspiratif Bapak Arifin, Kepala Desa Pagerbumi, yang memelopori budidaya kelapa sawit di tanah kelahirannya, mengubah tantangan menjadi harapan baru bagi kemajuan desa.
