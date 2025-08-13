@@ -4,7 +4,7 @@ title: "Mengubah Tumpukan Sampah Organik Menjadi Sumber Daya di Desa Pagerbumi"
 author: Alfa Rizki Fatkhurohman
 date: 2025-08-13
 tags: ["posts", "Edukasi Warga", "sda"]
-image: /images/bsf-pagerbumi1.jpeg
+image: /images/bsf-pagerbumi1.jpg
 image_alt: Lalat Black Soldier Fly (BSF) dewasa hinggap di atas permukaan kayu.
 excerpt: "Artikel ini memberikan gambaran dan panduan praktis mengenai penggunaan larva black soldier fly sebagai salah satu solusi pengelolaan sampah organik, khususnya di Desa Pagerbumi."
 youtube_id: ""
@@ -25,7 +25,7 @@ Persoalan penanggulangan sampah organik di Desa Pagerbumi belum memiliki sistem 
 
 ### Mengenal Black Soldier Fly (BSF)
 
-<img title="Lalat Black Soldier Fly (BSF) Dewasa" alt="Lalat Black Soldier Fly (BSF) dewasa berwarna hitam dengan mata bergaris." src="/images/bsf-pagerbumi1.jpeg">
+<img title="Lalat Black Soldier Fly (BSF) Dewasa" alt="Lalat Black Soldier Fly (BSF) dewasa berwarna hitam dengan mata bergaris." src="/images/bsf-pagerbumi1.jpg">
 
 *Black soldier fly* (lalat tentara) adalah jenis lalat yang berasal dari benua Amerika dan telah tersebar luas di berbagai daerah, termasuk daerah tropis di Indonesia. Lalat ini memiliki karakter yang berbeda dari lalat yang biasa dikenal. Lalat BSF tidak membawa penyakit yang bisa ditularkan ke manusia, tidak suka hinggap di makanan, bahkan malah bisa membantu menguraikan sampah organik menjadi bentuk yang sederhana dan mudah diserap tanaman.
 
@@ -39,7 +39,7 @@ Persiapan awal dimulai dari pemilihan tempat untuk budi daya BSF. Tempat yang di
 2. Tempat pemanenan pupa, mirip kandang larva, tetapi dalam kondisi gelap.
 3. Tempat lalat dewasa, kandang berdinding transparan/jaring untuk proses kawin dan bertelur.
 
-<img title="Proses Budi Daya BSF" alt="Tiga gambar proses budidaya BSF: sampah organik sebagai pakan, larva mengurai sampah, dan kandang lalat dewasa." src="/images/bsf-pagerbumi2.jpeg">
+<img title="Proses Budi Daya BSF" alt="Tiga gambar proses budidaya BSF: sampah organik sebagai pakan, larva mengurai sampah, dan kandang lalat dewasa." src="/images/bsf-pagerbumi2.jpg">
 *Sumber Gambar: Tim Energi dan Pengelolaan Limbah UGM, 2021*
 
 #### Pengambilan Larva BSF
