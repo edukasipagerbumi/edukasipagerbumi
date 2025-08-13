@@ -14,6 +14,8 @@ module.exports = function(eleventyConfig) {
   // PERBAIKAN: Tambahkan baris ini untuk menyalin folder admin
   eleventyConfig.addPassthroughCopy("_src/admin");
 
+  eleventyConfig.addPassthroughCopy("_src/pdf");
+
   return {
     // Menentukan folder-folder
     dir: {

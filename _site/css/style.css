@@ -816,3 +816,38 @@ body {
     margin-top: 0;
     margin-bottom: 15px;
 }
+
+/* === STYLE UNTUK BOOKLET PDF === */
+
+.btn-download {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #0056b3; /* Warna biru lebih gelap */
+}
+
+.btn-download .fas {
+    margin-right: 10px;
+}
+
+.pdf-viewer {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden; /* Agar iframe mengikuti border-radius */
+}
+
+.pdf-viewer iframe {
+    display: block; /* Menghapus spasi kosong di bawah iframe */
+    border: none;
+}
